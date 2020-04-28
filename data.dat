@@ -1,0 +1,37 @@
+{
+    "JUGADOR 0": {
+        "Dias faltados": [],
+        "Faltas": 0.0,
+        "Lvl": 10,
+        "Name": "cayetano",
+        "Num": 17
+    },
+    "JUGADOR 1": {
+        "Dias faltados": [
+            "28 04 2020",
+            "28 04 2020"
+        ],
+        "Faltas": 2.0,
+        "Lvl": 0,
+        "Name": "arnold",
+        "Num": 11
+    },
+    "JUGADOR 2": {
+        "Dias faltados": [
+            "28 04 2020",
+            "28 04 2020"
+        ],
+        "Faltas": 2.0,
+        "Lvl": 100,
+        "Name": "leo",
+        "Num": 26
+    },
+    "jugs": 3,
+    "name": "Prem",
+    "sessions": {
+        "Entreno 0": "28 04 2020",
+        "Entreno 1": "28 04 2020",
+        "Entreno 2": "28 04 2020",
+        "Num": 3
+    }
+}
