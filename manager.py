@@ -11,11 +11,14 @@ class Player:
         self.dayslost = []
 
     def show(self):
+        """
         print("------------------------")
         print("Nombre: ", self.name)
         print("Dorsal:", self.num)
         print("Nivel: ", self.lvl)
         print("Asistencia: " + str(((1 - self.faltas//self.sessions["Num"])*100)) + "%")
+        """
+
 
     def encode(self):
         return dict({"Name" : self.name, "Num" : self.num, "Lvl" : self.lvl, "Faltas" : self.faltas, "Dias faltados" : self.dayslost})
@@ -32,6 +35,7 @@ class Team:
         self.jugs += 1
 
     def show(self):
+        """
 #        os.system('clear')
         print("Nº de jugadores: ", self.jugs)
 
@@ -48,10 +52,14 @@ class Team:
                 res = ("{0:.2f}".format((1.0 - (x["Faltas"]/div))*100))
                 print("Asistencia: " + str(res) + "%")
             print("Dias faltados : ", x["Dias faltados"])
+        """
+        tmp = self.team
+        tmp["jugs"] = self.jugs
+        tmp["name"] = self.name
+        tmp["sessions"] = self.sessions
+        print(json.dumps(tmp))
 
 
-    def encode(self):
-        return json.dumps(self.team)
 
     def saveTeam(self):
         tmp = self.team
